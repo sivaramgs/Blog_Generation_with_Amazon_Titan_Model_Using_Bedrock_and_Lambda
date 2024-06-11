@@ -30,5 +30,25 @@ To generate a blog for the User topic with Titan Text G1 - Express Model that ru
 
 ![Architecture](assets/Blog_Generation_Architecture.png)
 
+### Work Done:
 
+1. Requested and got the access granted for Titan Text G1 Express Model in Amazon Bedrock.
+![TitanModel](assets/titan_model.png)
 
+2. Noted model id and API request for Titan Text G1 Express in Amazon Bedrock.
+![bedrock](assets/awsbedrock.png)
+
+3. Created a API Gateway to trigger AWS lambda function and added route to make a POST API request.
+![apigateway](assets/apigateway.png)
+
+4. Written the python code to invoke Titan Text G1 Express model for blog generation of user topic. Added layer to use latest boto3 library. 
+![lambda](assets/lambda.png)
+
+5. Made a POST API request from POSTMAN to API gateway endpoint to trigger the AWS lambda function for blog generation. Passed the User topic in the body of request parameter.
+![Postman](assets/postman.png)
+
+6. Monitored the cloudwatch logs of the AWS lambda function and fixed the errors raised. Verified the success message "code saved to S3". 
+![cloudwatch](assets/cloudwatch.png)
+
+7. Saved the generated blog as a text file in S3 bucket.
+![S3](assets/S3.png)
