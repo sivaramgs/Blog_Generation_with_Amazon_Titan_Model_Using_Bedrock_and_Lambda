@@ -57,4 +57,5 @@ To generate a blog for the User topic with Titan Text G1 - Express Model that ru
 ![cloudwatch](assets/cloudwatch.png)
 
 7. Saved the generated blog as a text file in S3 bucket.
+
 ![S3](assets/S3.png)
