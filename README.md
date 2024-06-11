@@ -44,7 +44,7 @@ To generate a blog for the User topic with Titan Text G1 - Express Model that ru
 
 ![apigateway](assets/apigateway.png)
 
-4. Written the python code to invoke Titan Text G1 Express model for blog generation of user topic. Added layer to use latest boto3 library. 
+4. Written the python code [refer app.py] to invoke Titan Text G1 Express model for blog generation of user topic. Added layer to use latest boto3 library.
 
 ![lambda](assets/lambda.png)
 
@@ -57,4 +57,4 @@ To generate a blog for the User topic with Titan Text G1 - Express Model that ru
 ![cloudwatch](assets/cloudwatch.png)
 
 7. Saved the generated blog as a text file in S3 bucket.
-[S3](assets/S3.png)
+![S3](assets/S3.png)
